@@ -32,6 +32,9 @@
 .address h2{
     font-size: 20px;
 }
+.address p{
+    margin-top:-15px;
+}
 .searchbar{
     border: 1px solid black;
     border-radius: 10px;
