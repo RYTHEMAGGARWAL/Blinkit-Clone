@@ -1,0 +1,364 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*nav styling*/
+.nav{
+    display:flex;
+    background-color: white;
+    top:0;
+    align-items:center;
+}
+.logo{
+    height:100%;
+    padding:10px;
+    width:170px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.address{
+    align-items: center;
+    font-size: 15px;
+    padding: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+}
+.address:hover{
+    cursor: pointer;
+}
+.address h2{
+    font-size: 20px;
+}
+.searchbar{
+    border: 1px solid black;
+    border-radius: 10px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding:10px;
+    height:50px;
+    width:55vw;
+}
+.searchbar input{
+    width: 100%;
+    height:100%;
+    border:none;
+    outline:none;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-radius: 5px;;
+}
+.buttons{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    width: 15%;
+    height:100%;
+    margin-left: 25px;
+}
+.login{
+    height:100px;
+    width:50%;
+    background-color: white;
+    align-items:center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer; 
+}
+.SignUp{
+    height:100px;
+    width:50%;
+    background-color:white;
+    align-items:center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;    
+}
+
+/* hero stylings*/
+
+.wide{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.smalls{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 15px 15px;
+}
+.smalls img{
+    height: 194px;
+    width: auto;
+}
+
+/* categories styling*/
+
+.categories{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.products{
+    width: 128px;
+    height: 188.235px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* container styling*/
+
+.container {
+    WIDTH:83%;
+    padding: 20px;
+    margin: 0 120px;
+}
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.category-header h1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #333;
+}
+.see-all {
+    text-decoration: none;
+    color: green;
+    font-weight: 500;
+    font-size: 18px;
+}
+.product-array {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 5px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+.product-array::-webkit-scrollbar {
+    display: none; 
+}
+.product-card {
+    min-width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    padding: 15px;
+    background-color: white;
+}
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.product-content {
+    padding: 10px 15px 15px;
+}
+.delivery-time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.clock-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 10px;
+}
+.product-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px 0;
+    color: #333;
+}
+.product-quantity {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price {
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+}
+.add-button {
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.add-button:hover {
+    background-color: #f0fff0;
+}
+.products-container {
+    position: relative;
+}
+
+
+/* Footer styling*/
+
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.useful-links {
+    flex: 1;
+}
+.categories {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.see-all {
+    color: #3cb371;
+    text-decoration: none;
+    font-size: 14px;
+}
+.links-column {
+    width: 25%;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+.links-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.category-column {
+    width: 33.33%;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+}
+li {
+    margin-bottom: 15px;
+}
+a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #3cb371;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+.copyright {
+    font-size: 13px;
+    color: #666;
+}
+.download-section {
+    display: flex;
+    align-items: center;
+}
+.download-text {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #666;
+}
+.app-buttons img {
+    height: 35px;
+    margin-right: 10px;
+}
+.social-icons {
+    display: flex;
+}
+.social-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
+}
+.disclaimer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+    line-height: 1.5;
+}
